@@ -1,0 +1,245 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f4f8;
+    color: #243447;
+}
+
+header {
+    background-color: #172b4d;
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 25px;
+    font-size: 32px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    background-color: #263f63;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #35c9b0;
+    color: #172b4d;
+}
+
+main {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 35px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    min-height: 400px;
+}
+
+h2 {
+    color: #172b4d;
+    margin-top: 0;
+}
+
+h3 {
+    color: #263f63;
+}
+
+p {
+    line-height: 1.6;
+}
+
+section {
+    padding: 25px;
+    margin-bottom: 25px;
+    background-color: #f8fafc;
+    border: 1px solid #e1e8f0;
+    border-radius: 12px;
+}
+
+section h2 {
+    border-left: 4px solid #35c9b0;
+    padding-left: 12px;
+}
+
+button {
+    background-color: #24b89e;
+    color: white;
+    border: none;
+    padding: 11px 18px;
+    margin: 5px 5px 5px 0;
+    border-radius: 7px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #15947e;
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+input[type="text"],
+input[type="number"] {
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 7px;
+    font-size: 15px;
+    margin: 8px 0;
+    max-width: 100%;
+}
+
+input:focus {
+    outline: none;
+    border-color: #24b89e;
+}
+
+label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+#colorBox {
+    background-color: #e2e8f0;
+    padding: 25px;
+    border-radius: 10px;
+    margin: 15px 0;
+    transition: 0.3s;
+}
+
+#colorBox p {
+    margin: 0;
+}
+
+#mouseBox {
+    border-radius: 10px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#itemList li {
+    padding: 5px;
+}
+
+#num1,
+#num2 {
+    width: 220px;
+}
+
+#result {
+    background-color: #e5f8f4;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    color: #167d6c;
+}
+
+#taskInput {
+    width: 280px;
+}
+
+#taskList {
+    list-style: none;
+    padding: 0;
+}
+
+#taskList li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: white;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #e1e8f0;
+    border-radius: 8px;
+}
+
+#taskList span {
+    flex: 1;
+    overflow-wrap: anywhere;
+}
+
+#taskList input {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    accent-color: #24b89e;
+}
+
+#taskList button {
+    background-color: #ef6464;
+    margin: 0;
+}
+
+#taskList button:hover {
+    background-color: #d94444;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #64748b;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 26px;
+    }
+
+    main {
+        margin: 20px 12px;
+        padding: 18px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    nav {
+        gap: 6px;
+    }
+
+    nav a {
+        padding: 8px 10px;
+        font-size: 13px;
+    }
+
+    #taskList li {
+        flex-wrap: wrap;
+    }
+}
+
+
+
+nav a.active {
+    background-color: #35c9b0;
+    color: #172b4d;
+    font-weight: bold;
+}
